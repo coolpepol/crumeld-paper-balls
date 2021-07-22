@@ -21,7 +21,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-var yeet
+
 var right
 var left
 var botem
@@ -46,7 +46,7 @@ function setup() {
 	ball = Bodies.circle(200,200,30)
 	World.add(world,ball)
 	Engine.run(engine);
-	yeet = new stationary(200,20,200,50)
+	
 	left = new stationary(20,200,50,200)
 	right = new stationary(380,200,50,200)
 	botem = new stationary(20,400,200,50)
@@ -59,7 +59,7 @@ function draw() {
 	
 	rectMode(CENTER);
 	ellipseMode(RADIUS);
-	yeet.show()
+	
 	left.show()
 	right.show()
 	botem.show()
