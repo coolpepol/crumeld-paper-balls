@@ -57,7 +57,7 @@ function setup() {
 function keyPressed(){
 	if(keyCode === UP_ARROW){
 
-		Matter.Body.applyForce(ball, ball.position,{x:4,y:-89})
+		Matter.Body.applyForce(ball, ball.position,{x:100,y:-89})
 		shoot = false
 	}
 
